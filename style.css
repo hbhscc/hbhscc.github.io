@@ -1,0 +1,139 @@
+/*
+   Pallete (the descriptions are not html standard - do not use!)
+   #483c46 (plum-like)
+   #3c6e71 (dull marine blue)
+   #70ae6e (dull green)
+   #beee62 (lime green)
+   #f4743b (mute orange)
+*/
+@font-face
+{
+   font-family: 'robotoblack';
+   src: url('robotoblack.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face
+{
+   font-family: 'robotobold';
+   src: url('robotobold.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face
+{
+   font-family: 'robotoregular';
+   src: url('robotoregular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+*, html
+{
+   background-color: #483c46;
+   border: dashed 0px; /* debug */
+}
+body
+{
+   padding: 0px;
+   margin: 0px;
+   background-color: inherit;
+   color: #ffffff;
+   min-height: 100%;
+   font-size: 18px;
+   font-weight: normal;
+   font-style: normal;
+}
+
+a:link    {color: #f4743b; text-decoration: none;}
+a:visited {color: #f4743b; text-decoration: none;}
+a:hover   {color: #beee62; text-decoration: none;}
+a:active  {color: #cc0000; text-decoration: none;}
+
+b {font-weight: bold;}
+u {text-decoration: underline;}
+i {font-style: italic;}
+
+.p
+{
+   margin-top: 0.8em;
+   margin-bottom: 0.8em;
+}
+.c
+{
+   text-align: center;
+}
+.b /* Safari adds additional bold with <b></b> ignoring style sheet */
+{
+   font-family: 'robotobold', Verdana, Tahoma, Luxi Sans, Arial, Helvetica,
+      sans-serif;
+}
+.heading.primary
+{
+   font-family: 'robotoblack', Verdana, Tahoma, Luxi Sans, Arial, Helvetica,
+      sans-serif;
+   font-size: 3em;
+   line-height: 1.2em;
+   padding: 0.5em 1em 0.2em;
+   text-align: center;
+   color: #f4743b;
+}
+.heading.secondary
+{
+   font-family: 'robotobold', Verdana, Tahoma, Luxi Sans, Arial, Helvetica,
+      sans-serif;
+   font-size: 1.4em;
+}
+.writing
+{
+   font-family: 'robotoregular', Verdana, Tahoma, Luxi Sans, Arial, Helvetica,
+      sans-serif;
+   max-width: 30em;
+   padding: 0em 2em;
+   line-height: 1.3em;
+}
+.writing.primary
+{
+   font-size: 1em;
+}
+.writing.secondary
+{
+   font-size: 0.7em;
+}
+.avatar
+{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+}
+.hspace
+{
+   width: 1em;
+}
+.vspace
+{
+   height: 1em;
+}
+#layoutTable
+{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+#userTable
+{
+   max-width: 30em;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 1em;
+   padding: 0.5em 2em 1.5em;
+}
+.userItem
+{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 1em;
+}
